@@ -27,7 +27,6 @@
 - Create your database class inheriting from BlazorDBContext in the BlazorDB namespace
 
 ```csharp
-
 using BlazorDB;
 using Microsoft.EntityFrameworkCore;
 
@@ -54,7 +53,6 @@ public class MyBlazorDatabase : BlazorDBContext
     
     // no need to override OnConfiguring, it is already good to go
 }
-
 ```
 
 - In the `Main` method of the Program.cs class, call the `ConfigureBlazorDBAsync` method
