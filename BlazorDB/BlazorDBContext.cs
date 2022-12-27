@@ -32,7 +32,7 @@ public abstract class BlazorDBContext : DbContext
         Microsoft.Data.Sqlite.SqliteConnection sqliteCn = new Microsoft.Data.Sqlite.SqliteConnection(Database.GetConnectionString());
         Microsoft.Data.Sqlite.SqliteConnection.ClearPool(sqliteCn);
 
-        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorDB/Cache.js");
+        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.DB/Cache.js");
         await jsModule.InvokeVoidAsync("SaveToBrowserCache");
     }
 
@@ -42,7 +42,7 @@ public abstract class BlazorDBContext : DbContext
     /// <returns>A <see cref="Task"/> that represents the asynchronous operation.</returns>
     public static async Task<bool> RestoreFromCacheAsync()    
     {
-        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorDB/Cache.js");
+        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.DB/Cache.js");
         return await jsModule.InvokeAsync<bool>("RestoreFromBrowserCache");
     }
 
@@ -52,7 +52,7 @@ public abstract class BlazorDBContext : DbContext
     /// <returns>A <see cref="Task"/> that represents the asynchronous operation.</returns>
     public async Task DeleteFromCacheAsync() 
     {
-        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/BlazorDB/Cache.js");
+        await using IJSObjectReference jsModule = await runtime.InvokeAsync<IJSObjectReference>("import", "./_content/Blazor.DB/Cache.js");
         await jsModule.InvokeVoidAsync("DeleteDBFromCache");
     }
 }
