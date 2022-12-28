@@ -1,10 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Blazor.DB</Title>
+		<Description>An easy to use database storage in the browser for your Blazor-wasm app</Description>
+		<PackageProjectUrl></PackageProjectUrl>
+		<RepositoryUrl>https://github.com/benoit160/BlazorDB</RepositoryUrl>
+		<PackageTags>Blazor;Blazor-wasm; SQLite; EFCore; EntityFrameworkCore; DbContext</PackageTags>
+		<PackageId>Blazor.DB</PackageId>
+		<Version>1.01</Version>
+		<RepositoryType>git</RepositoryType>
+		<Authors>Benoît Soupart</Authors>
+		<Copyright>Copyright (c) BlazorDB 2022</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
 
 
   <ItemGroup>
@@ -15,5 +27,4 @@
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.1" />
 	  <PackageReference Include="Microsoft.JSInterop" Version="7.0.1" />
   </ItemGroup>
-
 </Project>
