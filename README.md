@@ -15,6 +15,11 @@
 
 ## Setup 
 
+- If you don't have it already, install the wasm tools with the following command in VS powershell
+```
+dotnet install workload wasm-tools
+```
+
 - Add the nuget package reference to your project
   
 ```csharp
