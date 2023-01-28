@@ -24,7 +24,7 @@ dotnet install workload wasm-tools
   
 ```csharp
   <ItemGroup>
-	<PackageReference Include="Blazor.DB" Version="1.1.0" />
+	<PackageReference Include="Blazor.DB" Version="1.2.0" />
   </ItemGroup>
 ```
 ## How to use
