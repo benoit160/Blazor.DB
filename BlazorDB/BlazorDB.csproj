@@ -11,7 +11,7 @@
 		<RepositoryUrl>https://github.com/benoit160/BlazorDB</RepositoryUrl>
 		<PackageTags>Blazor;Blazor-wasm; SQLite; EFCore; EntityFrameworkCore; DbContext</PackageTags>
 		<PackageId>Blazor.DB</PackageId>
-		<Version>1.01</Version>
+		<Version>1.02</Version>
 		<RepositoryType>git</RepositoryType>
 		<Authors>Benoît Soupart</Authors>
 		<Copyright>Copyright (c) BlazorDB 2022</Copyright>
